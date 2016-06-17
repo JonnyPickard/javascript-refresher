@@ -4,12 +4,18 @@ var selectElementsStartingWithA = function(array) {
   }
 
   return array.filter(startsWithA);
-  
+
 }
 
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
-}
+
+  function startWithVowel(string) {
+    return (/^[aeiou]/).test(string);
+  }
+
+  return array.filter(startWithVowel);
+};
+
 
 var removeNullElements = function(array) {
   return 'Write your method here';

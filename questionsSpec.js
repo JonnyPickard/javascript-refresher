@@ -7,7 +7,7 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual(['apples', 'avocados']);
   });
 
-  xit('selects elements starting with a vowel', function(){
+  it('selects elements starting with a vowel', function(){
     var result = selectElementsStartingWithVowel(['john', 'david', 'omar', 'fred', 'idris', 'angela']);
     expect(result).toEqual(['omar', 'idris', 'angela']);
   });
