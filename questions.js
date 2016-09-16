@@ -5,7 +5,7 @@ var selectElementsStartingWithA = function(array) {
 
   return array.filter(startsWithA);
 
-}
+};
 
 var selectElementsStartingWithVowel = function(array) {
 
@@ -18,12 +18,16 @@ var selectElementsStartingWithVowel = function(array) {
 
 
 var removeNullElements = function(array) {
-  return array.filter(function(val) { return val !== null; })
-}
+  return array.filter(function(val) { return val !== null; });
+};
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
-}
+  arr = array.filter(function (n) {
+    return (n !== null && n !== false);
+  });
+
+  return arr;
+};
 
 var reverseWordsInArray = function(array) {
   return 'Write your method here';

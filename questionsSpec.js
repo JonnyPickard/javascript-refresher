@@ -17,7 +17,7 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual(['a', 'b', false, 0]);
   });
 
-  xit('removes null and false values from an array', function(){
+  it('removes null and false values from an array', function(){
     var result = removeNullAndFalseElements(['a', 'b', null, null, false, 0]);
     expect(result).toEqual(['a', 'b', 0]);
   });
