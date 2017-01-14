@@ -22,33 +22,33 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual(['a', 'b', 0]);
   });
 
-  xit('reverses the letters of each element in an array', function(){
+  it('reverses the letters of each element in an array', function(){
     var result = reverseWordsInArray(['dog', 'monkey', 'elephant', 'kayak']);
     expect(result).toEqual(['god', 'yeknom', 'tnahpele', 'kayak']);
   });
 
-  xit('makes every possible pairing of students', function(){
+  it('makes every possible pairing of students', function(){
     var result = everyPossiblePair(['Jon', 'Tyrion', 'Daenerys']);
     // sorted alphabetically
-    expect(result).toEqual([[ 'Daenerys', 'Jon' ], [ 'Daenerys', 'Tyrion' ], [ 'Jon', 'Tyrion' ]] );
+    expect(result).toEqual([[ 'Jon', 'Tyrion' ], [ 'Jon', 'Daenerys' ], [ 'Tyrion', 'Daenerys' ] ] );
   });
 
-  xit('takes all elements except the first 3', function(){
+  it('takes all elements except the first 3', function(){
     var result = allElementsExceptFirstThree([1, 2, 3, 4, 5, 6, 7, 8]);
     expect(result).toEqual([4, 5, 6, 7, 8]);
   });
 
-  xit('adds an element to the beginning of an array', function(){
+  it('adds an element to the beginning of an array', function(){
     var result = addElementToBeginning([2, 3, 4, 5], 1);
     expect(result).toEqual([1, 2, 3, 4, 5]);
   });
 
-  xit('sorts an array by the last letter of each word', function(){
+  it('sorts an array by the last letter of each word', function(){
     var result = sortByLastLetter(['Lannister', 'Stark', 'Greyjoy', 'Targaryen']);
     expect(result).toEqual(['Stark', 'Targaryen', 'Lannister', 'Greyjoy']);
   });
 
-  xit('gets the first half of a string', function(){
+  it('gets the first half of a string', function(){
     var resultOne = getFirstHalf('dragon');
     var resultTwo = getFirstHalf('snake');
 
@@ -56,7 +56,7 @@ describe('javascriptRefresher', function(){
     expect(resultTwo).toEqual('sna');
   });
 
-  xit('makes numbers negative', function(){
+  it('makes numbers negative', function(){
     var resultOne = makeNegative(5);
     var resultTwo = makeNegative(-5);
 
@@ -64,47 +64,47 @@ describe('javascriptRefresher', function(){
     expect(resultTwo).toEqual(-5);
   });
 
-  xit('counts elements in an array that are palindromes', function(){
+  it('counts elements in an array that are palindromes', function(){
     var result = numberOfPalindromes(['kayak', 'noon', 'khaleesi', 'hodor', 'racecar', 'abcbc', 'abcba']);
     expect(result).toEqual(4);
   });
 
-  xit('returns the shortest word in an array', function(){
+  it('returns the shortest word in an array', function(){
     var result = shortestWord(['winter', 'is', 'coming']);
     expect(result).toEqual('is');
   });
 
-  xit('returns the longest word in an array', function(){
+  it('returns the longest word in an array', function(){
     var result = longestWord(['A', 'Lannister', 'always', 'pays', 'his', 'debts'])
     expect(result).toEqual('Lannister');
   });
 
-  xit('sums up the numbers in an array', function(){
+  it('sums up the numbers in an array', function(){
     var result = sumNumbers([1, 3, 5, 6, 2, 8]);
     expect(result).toEqual(25);
   });
 
-  xit('repeats the elements of an array', function(){
+  it('repeats the elements of an array', function(){
     var result = repeatElements(['a', 'b', 'c']);
     expect(result).toEqual(['a', 'b', 'c', 'a', 'b', 'c']);
   });
 
-  xit('turns a number string into a number', function(){
+  it('turns a number string into a number', function(){
     var result = stringToNumber('3');
     expect(result).toEqual(3);
   });
 
-  xit('calculates the average of an array of numbers', function(){
+  it('calculates the average of an array of numbers', function(){
     var result = calculateAverage([10, 15, 25]);
     expect(result).toEqual((10 + 15 + 25) / 3);
   });
 
-  xit('gets elements until greater than five', function(){
+  it('gets elements until greater than five', function(){
     var result = getElementsUntilGreaterThanFive([1, 3, 5, 4, 1, 2, 6, 2, 1, 3, 7]);
     expect(result).toEqual([1, 3, 5, 4, 1, 2]);
   });
 
-  xit('converts an array to an object', function(){
+  it('converts an array to an object', function(){
     var result = convertArrayToObject(['Jaime', 'Lannister', 'Robb', 'Stark', 'Joffrey', 'Baratheon']);
     expect(result).toEqual({'Jaime': 'Lannister', 'Robb': 'Stark', 'Joffrey': 'Baratheon'});
   });
