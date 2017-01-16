@@ -109,7 +109,7 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual({'Jaime': 'Lannister', 'Robb': 'Stark', 'Joffrey': 'Baratheon'});
   });
 
-  xit('gets all letters in an array of words', function(){
+  it('gets all letters in an array of words', function(){
     // returns sorted
     var result = getAllLetters(['cat', 'dog', 'fish']);
     expect(result).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);

@@ -111,11 +111,15 @@ var convertArrayToObject = function(array) {
 }
 
 var getAllLetters = function(array) {
-  return 'Write your method here';
+  return array.join("").split("")
+  //Remove duplicates
+  .filter( function( item, index, inputArray ) { return inputArray.indexOf(item) === index})
+  //Sort all elements
+  .sort(function(a, b) { return a < b ? -1 : 1 });
 }
 
 var swapKeysAndValues = function(object) {
-  return 'Write your method here';
+
 }
 
 var sumKeysAndValues = function(object) {
