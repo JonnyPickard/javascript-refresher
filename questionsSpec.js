@@ -128,22 +128,22 @@ describe('javascriptRefresher', function(){
     expect(result).toEqual(16);
   });
 
-  xit('removes capital letters from a string', function(){
+  it('removes capital letters from a string', function(){
     var result = removeCapitals('Hello Kitty');
-    expect(result).toEqual('ello xitty');
+    expect(result).toEqual('ello itty');
   });
 
-  xit('rounds up a number', function(){
+  it('rounds up a number', function(){
     var result = roundUp(4.3942);
     expect(result).toEqual(5);
   });
 
-  xit('formats a date nicely', function(){
+  it('formats a date nicely', function(){
     var result = formatDateNicely(new Date('2015-03-04'));
     expect(result).toEqual('04/03/2015');
   });
 
-  xit('gets the domain name from an email address', function(){
+  it('gets the domain name from an email address', function(){
     var result = getDomainName('spike@makersacademy.com');
     expect(result).toEqual('makersacademy');
     var result2 = getDomainName('spike@ssh.makersacademy.com');

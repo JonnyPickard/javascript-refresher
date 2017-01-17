@@ -135,19 +135,19 @@ var sumKeysAndValues = function(object) {
 }
 
 var removeCapitals = function(string) {
-  return 'Write your method here';
+  return string.replace(/[A-Z]+/g, '');
 }
 
 var roundUp = function(number) {
-  return 'Write your method here';
+  return Math.ceil(number);
 }
 
 var formatDateNicely = function(date) {
-  return 'Write your method here';
+  return date.toLocaleDateString('en-GB');
 }
 
 var getDomainName = function(string) {
-  return 'Write your method here';
+ return string.replace(/.*@/, "").replace(/.com$/, '');
 }
 
 var titleize = function(string) {
