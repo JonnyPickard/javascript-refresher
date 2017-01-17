@@ -119,11 +119,19 @@ var getAllLetters = function(array) {
 }
 
 var swapKeysAndValues = function(object) {
-
+  var result = {};
+  for(var key in object){
+    result[object[key]] = key;
+  }
+  return result;
 }
 
 var sumKeysAndValues = function(object) {
-  return 'Write your method here';
+  var result = 0;
+  for(var key in object){
+    result += (object[key] + parseInt(key));
+  }
+  return result;
 }
 
 var removeCapitals = function(string) {

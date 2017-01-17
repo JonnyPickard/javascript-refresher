@@ -118,12 +118,12 @@ describe('javascriptRefresher', function(){
     expect(result2).toEqual(['a', 'c', 'd', 'f', 'g', 'h', 'i', 'o', 's', 't']);
   });
 
-  xit('swaps keys and values in an object', function(){
+  it('swaps keys and values in an object', function(){
     var result = swapKeysAndValues({'Frodo': 'Baggins', 'Samwise': 'Gamgee', 'Gandalf': 'The Gray'});
     expect(result).toEqual({'Baggins': 'Frodo', 'Gamgee': 'Samwise', 'The Gray': 'Gandalf'});
   });
 
-  xit('adds together keys and values', function(){
+  it('adds together keys and values', function(){
     var result = sumKeysAndValues({5: 3, 1: 7});
     expect(result).toEqual(16);
   });
