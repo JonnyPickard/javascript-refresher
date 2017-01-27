@@ -157,7 +157,7 @@ describe('javascriptRefresher', function(){
     expect(result2).toEqual('The Lion the Witch. And the Wardrobe');
   });
 
-  xit('checks a string for special characters', function(){
+  it('checks a string for special characters', function(){
     var resultOne = checkForSpecialCharacters('ABCdef123');
     var resultTwo = checkForSpecialCharacters('ABC@dsklfj!');
 
@@ -165,7 +165,7 @@ describe('javascriptRefresher', function(){
     expect(resultTwo).toBe(true);
   });
 
-  xit('finds the square root of a number', function(){
+  it('finds the square root of a number', function(){
     var resultOne = squareRoot(9);
     var resultTwo = squareRoot(3);
 

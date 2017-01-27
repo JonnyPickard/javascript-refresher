@@ -151,15 +151,15 @@ var getDomainName = function(string) {
 }
 
 var titleize = function(string) {
-  return 'Write your method here';
-}
+  return str;
+};
 
 var checkForSpecialCharacters = function(string) {
-  return 'Write your method here';
+ return /[~`!#$%\^&*+=\-\[\]\\';,/{}|\\":<>\?]/g.test(string);
 }
 
 var squareRoot = function(number) {
-  return 'Write your method here';
+  return Math.sqrt(number);
 }
 
 var factorial = function(number) {
