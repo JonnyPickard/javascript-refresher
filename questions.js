@@ -163,7 +163,11 @@ var squareRoot = function(number) {
 }
 
 var factorial = function(number) {
-  return 'Write your method here';
+  if (number === 0) {
+    return 1;
+  } else {
+    return number * factorial( number - 1 );
+  }
 }
 
 var findAnagrams = function(string) {

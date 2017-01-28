@@ -173,7 +173,7 @@ describe('javascriptRefresher', function(){
     expect(resultTwo).toEqual(1.7320508075688772);
   });
 
-  xit('finds the factorial of a number', function(){
+  it('finds the factorial of a number', function(){
     var result = factorial(5);
     expect(result).toEqual(120); // = 5 * 4 * 3 * 2 * 1
   });
