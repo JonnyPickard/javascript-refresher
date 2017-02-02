@@ -191,7 +191,7 @@ describe('javascriptRefresher', function(){
     }
   });
 
-  xit('converts Fahrenheit to Celsius rounding to the nearest integer', function(){
+  it('converts Fahrenheit to Celsius rounding to the nearest integer', function(){
     var resultOne = convertToCelsius(32);
     var resultTwo = convertToCelsius(55);
 
@@ -199,7 +199,7 @@ describe('javascriptRefresher', function(){
     expect(resultTwo).toEqual(13);
   });
 
-  xit('changes each letter of an array into xits position in the alphabet', function(){
+  xit('changes each letter of an array into its position in the alphabet', function(){
     var result = letterPosition(['H', 'e', 'l', 'l', 'o', 'k', 'i', 't', 't', 'y']);
     expect(result).toEqual([8, 5, 12, 12, 15, 11, 9, 20, 20, 25]);
   });
