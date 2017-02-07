@@ -179,5 +179,7 @@ var convertToCelsius = function(number) {
 }
 
 var letterPosition = function(array) {
-  return 'Write your method here';
-}
+  return array.map(function (a,b,c){
+    return (a.toLowerCase().charCodeAt(0)-96);
+  });
+};

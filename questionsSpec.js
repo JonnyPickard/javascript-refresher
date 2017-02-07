@@ -199,7 +199,7 @@ describe('javascriptRefresher', function(){
     expect(resultTwo).toEqual(13);
   });
 
-  xit('changes each letter of an array into its position in the alphabet', function(){
+  it('changes each letter of an array into its position in the alphabet', function(){
     var result = letterPosition(['H', 'e', 'l', 'l', 'o', 'k', 'i', 't', 't', 'y']);
     expect(result).toEqual([8, 5, 12, 12, 15, 11, 9, 20, 20, 25]);
   });
